@@ -1,0 +1,96 @@
+/* Reset and Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header */
+header {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #282c34;
+  color: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+header h1 {
+  padding: 1rem 0;
+  font-size: 2rem;
+}
+
+/* Chat Section */
+.chat {
+  background-color: #f1f1f1;
+  margin: 0.9rem 1.7rem;
+  min-height: 90vh;
+  overflow-y: auto;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+/* User Message */
+.chat .use {
+  color: #ffffff;
+  background-color: #007bff;
+  margin: 0 0 0 3rem;
+  padding: 0.8rem;
+  border-radius: 10px;
+  max-width: 70%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Bot Message */
+.chat .bot {
+  background-color: #e1f7ff;
+  margin: 1rem 3rem 0 0;
+  padding: 0.8rem;
+  border-radius: 10px;
+  max-width: 70%;
+  color: #333;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Input Section */
+.use-input {
+  margin: 0 calc(14vw / 2);
+  position: fixed;
+  bottom: 10px;
+  height: 40px;
+  width: 86vw;
+  display: grid;
+  grid-template-columns: 1fr 0.3fr;
+  gap: 0.5rem;
+}
+
+/* Input Field */
+.use-input .input #input-msg {
+  border-radius: 10px;
+  background-color: #ffffff;
+  height: 100%;
+  width: 100%;
+  padding: 5px 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Send Button */
+.use-input .button {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.use-input .button:hover {
+  background-color: #0056b3;
+}
