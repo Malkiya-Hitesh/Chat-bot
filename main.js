@@ -46,7 +46,8 @@ const botReply = data.text || (data.generations && data.generations[0]?.text) ||
 
 createP(botReply, 'bot');
 	button.disabled = false;
-prompt='';
+	document.getElementById("input-msg").value = '';
+
 //	document.getElementById("response").innerText =
 //		data.text || "No response!";
 }
