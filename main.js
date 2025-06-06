@@ -4,7 +4,6 @@ const button = document.getElementById('button')
 const allChat = document.getElementById('all-chat')
 
 
-console.log(allChat)
 let createP=(d,cl)=>{
 	let p = document.createElement('p')
 	p.classList.add(cl)
